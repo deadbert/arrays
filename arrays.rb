@@ -13,4 +13,11 @@ ages_array.push(56, 75)
 accounts_array.shift
 
 #unshift, append 1 new element to the front of success_array
-success_array.shift(true)
+success_array.unshift(true)
+
+# Keep in mind index position starts at 0 in Arrays, and increments by 1.
+# It's also helpful to know that you can use negative numbers as indexes as well.
+# For example Array[-1] will return the last element of the Array.
+# the bellow example will return "Bryden" because we poped "Phil" out of
+# the names_array, making "Bryden" the last element.
+puts names_array[-1]
