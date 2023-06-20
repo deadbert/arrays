@@ -21,3 +21,12 @@ success_array.unshift(true)
 # the bellow example will return "Bryden" because we poped "Phil" out of
 # the names_array, making "Bryden" the last element.
 puts names_array[-1]
+
+# Learning the filter method call
+# calling .filter on an array will filter the elements and return only
+# the elements that match the conditions set in your code block. Also,
+# by calling .filter! you can modify the original Array instead of returning
+# a new one. accounts_array.filter! {|num| num == 0.0} should modify
+#the original Array to have 1 element, 0.0
+accounts_array.filter! {|num| num == 0.0}
+puts accounts_array
